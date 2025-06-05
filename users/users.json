@@ -1,0 +1,26 @@
+[
+  {
+    "userId": "u1",
+    "name": "Athervi",
+    "email": "athervi@example.com",
+    "role": "null",
+    "createdAt": "2024-01-15T10:20:00Z",
+    "profilePicture": "/images/athervi.jpg"
+  },
+  {
+    "userId": "u2",
+    "name": "Priya Mehta",
+    "email": "priya@example.com",
+    "role": "null",
+    "createdAt": "2024-02-10T09:15:00Z",
+    "profilePicture": "/images/athervi.jpg"
+  },
+  {
+    "userId": "u3",
+    "name": "Rahul Sharma",
+    "email": "rahul@example.com",
+    "role": "null",
+    "createdAt": "2024-03-01T11:30:00Z",
+    "profilePicture": "/images/athervi.jpg"
+  }
+]

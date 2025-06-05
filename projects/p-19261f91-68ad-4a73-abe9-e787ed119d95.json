@@ -1,0 +1,85 @@
+{
+  "projectId": "p-19261f91-68ad-4a73-abe9-e787ed119d95",
+  "title": "",
+  "createdBy": "u1",
+  "createdAt": "2025-06-05T19:53:06.329Z",
+  "basicInfo": {
+    "description": "as",
+    "location": "ssddd",
+    "startDate": "2004-12-12",
+    "endDate": "2005-12-12"
+  },
+  "aois": [
+    {
+      "aoiId": "0465cd09-a9a6-4280-a95a-73dbf0673837",
+      "name": "0465cd09-a9a6-4280-a95a-73dbf0673837",
+      "coordinate": [
+        [
+          81.51034622200469,
+          23.526983036319024
+        ],
+        [
+          81.51034622200469,
+          23.526983036319024
+        ],
+        [
+          81.51034622200469,
+          23.526983036319024
+        ],
+        [
+          81.52799805973363,
+          23.50080962175542
+        ],
+        [
+          81.54199779310485,
+          23.53306987691521
+        ],
+        [
+          81.51034622200469,
+          23.526983036319024
+        ]
+      ],
+      "threshold": 10,
+      "createdAt": "2025-06-05T19:53:51.795Z"
+    }
+  ],
+  "aoiWatchConfig": {
+    "ridam": {
+      "frequency": "weekly",
+      "sensitivity": 1,
+      "temperature": "2"
+    },
+    "geoES": {
+      "frequency": "weekly",
+      "sensitivity": 1,
+      "temperature": "2"
+    },
+    "sangrahi": {
+      "frequency": "weekly",
+      "sensitivity": 1,
+      "temperature": "3"
+    }
+  },
+  "assignUser": {
+    "u2": {
+      "role": "analyst",
+      "config": {
+        "ridam": {
+          "frequency": "weekly",
+          "sensitivity": 3,
+          "temperature": "3"
+        },
+        "geoES": {
+          "frequency": "daily",
+          "sensitivity": 3,
+          "temperature": "3"
+        },
+        "sangrahi": {
+          "frequency": "weekly",
+          "sensitivity": 4,
+          "temperature": "4"
+        }
+      }
+    }
+  }
+}

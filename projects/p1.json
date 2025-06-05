@@ -1,0 +1,101 @@
+{
+  "projectId": "p1",
+  "title": "",
+  "createdBy": "u1",
+  "createdAt": "2025-06-05T19:47:07.346Z",
+  "basicInfo": {
+    "description": "as",
+    "location": "asa",
+    "startDate": "2003-12-12",
+    "endDate": "2005-12-12"
+  },
+  "aois": [
+    {
+      "aoiId": "74c1c537-65a8-49ac-bde6-8b4443c4666b",
+      "name": "74c1c537-65a8-49ac-bde6-8b4443c4666b",
+      "coordinate": [
+        [
+          78.32247308512223,
+          24.196996829144076
+        ],
+        [
+          78.32526530646726,
+          24.178339713793182
+        ],
+        [
+          78.34113020047313,
+          24.189381680021263
+        ],
+        [
+          78.32247308512223,
+          24.196996829144076
+        ]
+      ],
+      "threshold": 10,
+      "createdAt": "2025-06-05T19:47:42.422Z"
+    },
+    {
+      "aoiId": "ac8032c1-7bf1-4b7a-9228-8647a77092fe",
+      "name": "ac8032c1-7bf1-4b7a-9228-8647a77092fe",
+      "coordinate": [
+        [
+          78.31498485515147,
+          24.185193348003715
+        ],
+        [
+          78.33859181743219,
+          24.203342786746422
+        ],
+        [
+          78.33427656626259,
+          24.165647798588488
+        ],
+        [
+          78.31498485515147,
+          24.185193348003715
+        ]
+      ],
+      "threshold": 10,
+      "createdAt": "2025-06-05T19:47:49.322Z"
+    }
+  ],
+  "aoiWatchConfig": {
+    "ridam": {
+      "frequency": "weekly",
+      "sensitivity": 1,
+      "temperature": "assssd"
+    },
+    "geoES": {
+      "frequency": "weekly",
+      "sensitivity": 1,
+      "temperature": "333"
+    },
+    "sangrahi": {
+      "frequency": "weekly",
+      "sensitivity": 1,
+      "temperature": "3"
+    }
+  },
+  "assignUser": {
+    "u3": {
+      "role": "analyst",
+      "config": {
+        "ridam": {
+          "frequency": "weekly",
+          "sensitivity": 3,
+          "temperature": "3"
+        },
+        "geoES": {
+          "frequency": "weekly",
+          "sensitivity": 3,
+          "temperature": "3"
+        },
+        "sangrahi": {
+          "frequency": "weekly",
+          "sensitivity": 3,
+          "temperature": "3"
+        }
+      }
+    }
+  }
+}
