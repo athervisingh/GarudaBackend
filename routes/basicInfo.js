@@ -9,27 +9,25 @@ router.post('/', async (req, res) => {
   try {
     const basicInfo = req.body
 
-    // Validation
-    if (!basicInfo.projectName || !basicInfo.ssoUserId) {
-      return res.status(400).json({ error: 'projectName and ssoUserId are required' })
+    // ✅ Validate required fields
+    if (!basicInfo.projectName || !basicInfo.userId) {
+      return res.status(400).json({ error: 'projectName and userId are required' })
     }
 
-    // Generate geoentitySourceId
-    const geoentitySourceId = `geo-${uuidv4()}`
+    // ✅ Use existing projectID if present, else generate a new one
+    const projectID = basicInfo.projectID || `project-${uuidv4()}`
+    basicInfo.projectID = projectID // Ensure it gets stored
 
-    // Update object
-    basicInfo.geoentitySourceId = geoentitySourceId
-
-    // Optional: Save it as a JSON file
-    const fileName = `${basicInfo.projectName.replace(/\s+/g, '_')}_${Date.now()}.json`
+    // ✅ Save as project_<projectID>.json in /projects
+    const fileName = `${projectID}.json`
     const filePath = path.join(__dirname, '../projects', fileName)
 
     await fs.outputJson(filePath, basicInfo, { spaces: 2 })
 
-    // Send back just the ID
-    res.json({ geoentitySourceId })
+    // ✅ Send back just the ID
+    res.json({ projectID })
   } catch (err) {
-    console.error('Error saving basic info:', err)
+    console.error('❌ Error saving basic info:', err)
     res.status(500).json({ error: 'Internal Server Error' })
   }
 })
