@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
     await fs.ensureDir(folderPath); // Ensure folder exists
 
     // File name: <projectId>_users_<timestamp>.json
-    const fileName = `${projectId}_users_${Date.now()}.json`;
+    const fileName = `${projectId}.json`;
     const filePath = path.join(folderPath, fileName);
 
     // Data to store
