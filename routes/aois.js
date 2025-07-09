@@ -18,7 +18,7 @@ router.post('/', async (req, res) => {
       const generatedId = `geo-${uuidv4()}`;
       aoi.aoiId = generatedId; // ✅ use 'aoiId' as the correct key
 
-      const fileName = `${aoi.featureName.replace(/\s+/g, '_')}_${projectId}.json`;
+      const fileName = `${aoi.featureName.replace(/\s+/g, '_')}.json`;
       const filePath = path.join(__dirname, '../aois', fileName);
 
       await fs.outputJson(filePath, aoi, { spaces: 2 });
