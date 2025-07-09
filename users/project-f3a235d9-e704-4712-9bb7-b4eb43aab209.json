@@ -1,0 +1,15 @@
+{
+  "projectId": "project-f3a235d9-e704-4712-9bb7-b4eb43aab209",
+  "projectName": "project 2 ",
+  "users": [
+    {
+      "userId": "U001",
+      "role": "Analyst"
+    },
+    {
+      "userId": "U001",
+      "role": "Viewer"
+    }
+  ],
+  "savedAt": "2025-07-09T22:33:22.724Z"
+}
