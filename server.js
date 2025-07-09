@@ -13,7 +13,7 @@ const projectUserRoutes = require('./routes/project-users');
 
 // ✅ FIX CORS
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://garuda-frontend.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type']
 }))
